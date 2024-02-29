@@ -2,10 +2,11 @@
 
 body{
     background: url('media/n\ i\ g\ h\ t.jpg');
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 #hd-cabecera{
-    background-color:  #2A2B2E;
+    background-color:  #18171c;
     height: 100px;
     max-width: 90%;
     margin-left: auto;
@@ -34,7 +35,7 @@ h3{
 
 #nav-navegacion{
     list-style: none;
-    background:  #2A2B2E;
+    background:  #18171c;
     padding: 0px;
     max-width: 90%;
     margin: auto;
@@ -54,7 +55,7 @@ h3{
 #nav-navegacion li{
     display: inline-block;
     text-align: center;
-    background-color: #2A2B2E;
+    background-color: #18171c;
 }
 
 #nav-navegacion li a:hover{
@@ -67,7 +68,7 @@ h3{
 #section-contenido{
     max-width: 90%;
     margin: auto;
-    background-color: #2A2B2E;
+    background-color: #18171c;
     min-height: 600px;
     border-radius: 8px;
     padding-top: 10px;
@@ -80,21 +81,30 @@ table{
     margin-bottom: 30px;
 }
 
-table, th, td {
-    border: 1px solid #ACEB98;
-    background-color: #5A5A66;
+table{
+    border: 2px none #d5d4d1;
+    background-color: #040415;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    padding: 2px;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+td, th{
+    padding: 10px;
 }
 
 #titulo-tabla{
-    color: #87FF65;
-    font-weight: bold;
+    background-color: #0b1e64;
+    border-bottom: solid 2px #2a4aa0;
+    color: #d5d4d1;
 }
 
-
+tr:nth-child(even){
+    background-color: #101021;
+}
 
 #section-img img{
     max-width: 310px;
@@ -156,7 +166,7 @@ hr{
 }
 
 #footer-redes{
-    background-color: #2A2B2E;
+    background-color: #18171c;
     color: #d5d4d1;
     clear: both;
     margin-top: 40px;
