@@ -77,23 +77,18 @@ h3{
 }
 
 table{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-table{
     border: 2px none #d5d4d1;
     background-color: #040415;
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px;
+    padding: 10px;
     text-align: left;
     border-collapse: collapse;
 }
 
 td, th{
-    padding: 10px;
+    padding: 12px;
 }
 
 #titulo-tabla{
@@ -145,14 +140,7 @@ tr:nth-child(even){
     font-weight: bold;
     width: 90%;
     margin: auto;
-    color: #ACEB98;
-}
-
-#li-projects{
-    padding: 10px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #87FF65;
+    color: #d5d4d1;
 }
 
 #img-elmo{
@@ -161,7 +149,7 @@ tr:nth-child(even){
 }
 
 hr{
-    max-width: 90%;
+    max-width: 0%;
     
 }
 
@@ -219,25 +207,27 @@ img{
 
 #form-contacto{
     align-items: center;
-    width: 90%;
+    width: 70%;
     margin: auto;
 }
 
 #form-contacto input{
     margin-bottom: 15px;
-    width: 90%;
+    width: 70%;
     margin-top: 5px;
 }
 #form-contacto textarea{
     margin-bottom: 15px;
-    width: 90%;
+    width: 70%;
     margin-top: 5px;
 }
 
 #btn-input{
-    width: 30%;
+    border-radius: 8px;
+    width: 10%;
     font-weight: bold;
-    background-color: #ACEB98;
+    background-color: #607dcc;
+    color: #0b1e64;
     height: 40px;
 }
 
@@ -303,4 +293,69 @@ img{
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+/*Estilos de listas para pagina Proyectos*/
+
+#li-projects{
+    counter-reset: li; 
+    list-style: none; 
+    font: 30px 'trebuchet MS', 'lucida sans';
+    padding: 100px;
+    margin-bottom: 4em;
+}
+
+#li-projects a{
+    text-decoration: none;  
+    color: #d5d4d1;
+    display: block;
+    border-radius: 30px;
+}
+
+#li-projects a:hover{
+    color:#040415;
+}
+
+#li-projects ol {
+    margin: 0 0 0 2em; 
+}
+
+#li-projects {
+    list-style-type: none;
+     
+    margin: 0;
+    margin-left: 1em;
+     
+    counter-reset: li-counter;
+}
+
+#li-projects > li{
+    position: relative;
+    margin-bottom: 5em;
+    padding: 1.5em;
+    background-color: #607dcc;
+}
+
+#li-projects > li:before {
+    position: absolute;
+    top: -0.3em;
+    left: -0.5em;
+    width: 1.8em;
+    height: 1.2em;
+     
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    color: #040415;
+    background-color: #0071bc;
+     
+    transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    z-index: 99;
+    overflow: hidden;
+     
+    content: counter(li-counter);
+    counter-increment: li-counter;
 }
